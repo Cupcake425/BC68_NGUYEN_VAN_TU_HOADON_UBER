@@ -104,10 +104,12 @@ document.getElementById("btnInHoaDon").onclick = () => {
     soKm1Den19HienThi = soKM;
     soKm1Den19 = soKM - 1;
     tongGiaTienKm1Den19 = (soKM - 1) * GiaTienKm1Den19;
-  } else {
+  } else if (soKM > 19) {
     soKm1Den19HienThi = 19;
     soKm1Den19 = 18;
     tongGiaTienKm1Den19 = 18 * GiaTienKm1Den19;
+  } else {
+    soKm1Den19HienThi = 0;
   }
   if (soKM > 19) {
     soKmTu19TroLenHienThi = soKM;
